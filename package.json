@@ -1,0 +1,30 @@
+{
+  "name": "polsat",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "babel": "babel --presets es2015 index.js -o build/bundle.js",
+    "start": "http-server -p 3000",
+    "build": "webpack",
+    "dev": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobiasz230/lazyloading.git"
+  },
+  "author": "Tobiasz Libich",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "http-server": "^0.11.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
