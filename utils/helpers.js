@@ -2,7 +2,7 @@ export function onEventEnd (event, delay, callback) {
     let isTimeout;
 
     window.addEventListener(event, () => {
-        window.clearTimeout( isScrolling );
+        window.clearTimeout( isTimeout );
         isTimeout = setTimeout(() => {
             callback();
         }, delay);
